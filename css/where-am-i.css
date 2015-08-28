@@ -1,0 +1,94 @@
+* {
+	/*outline: 1px solid red;*/
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+	position: absolute; top: 0; left: 0;
+
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.you-are-here {
+	font-weight: bold;
+	font-size: x-large;
+	padding: 5px;
+}
+
+.outline {
+	outline: 2px solid black;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #000;
+}
+
+a:hover {
+	color: #f00;
+}
+
+.glyph {
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: georgia, serif;
+	font-style: italic;
+	font-size: xx-large;
+	/* red */
+	color: #ff0035;
+	padding: 5px 0;
+}
+
+.arrow:before {
+	content: "\21B1";
+}
+
+/* red */
+a.commit {
+	color: #ff0035;
+}
+
+/* blue */
+a:hover.commit {
+	color: #009fef;;
+}
+
+
+/* red */
+div.commit.glyph {
+	outline: 1px solid #ff0035;
+}
+
+.arrow-triangle:before {
+	content: "\25B6";
+}
+
+a.curiouser {
+	font-size: 500%;
+	color: #ffffcc;
+	padding: 10%;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #253494;
+}
+
+a:hover.curiouser {
+	color: #253494;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ffffcc;
+}

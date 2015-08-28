@@ -1,0 +1,182 @@
+/*
+	TODO:
+	- document proportions
+	- variables ??
+
+*/
+
+* {
+	/* width | style | color */
+	/*outline: 1px solid red !important;*/
+	border-radius: 10px;
+	border: 1px solid white;
+	box-sizing: border-box;
+}
+
+.form {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-justify-content: flex-start;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.composing-stick {
+	width: 100%;
+	height: 50%;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-align-items: flex-end;
+
+	display: flex;
+	/* establish the main axis */
+	flex-direction: row;
+	/* and the cross axis -- perpendicular to the main axis */
+	align-items: flex-end;
+}
+
+.type-slug {
+	height: 100%;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-justify-content: flex-end;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+/* the word "under" has 5 letters, thus (100 / 5)% width per letter */
+
+.under {
+	width: 20%;
+}
+
+.face {
+	width: 100%;
+
+	display: -webkit-flex;
+
+	display: flex;
+}
+
+.face.x-height {
+	height: 30%;
+}
+
+/* cross axis y (cross axis is opposite of main axis which is set via flex-direction,
+	see chris c @ css-tricks), justify bottom */
+.face.u {
+	-webkit-flex-direction: row;
+	-webkit-align-items: flex-end;
+
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+/* cross axis y (cross axis is opposite of main axis which is set via flex-direction,
+	see chris c @ css-tricks), justify top */
+.face.n {
+	-webkit-flex-direction: row;
+	-webkit-align-items: flex-start;
+
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.face.e {
+	height: 30%;
+
+	-webkit-flex-direction: column;
+	-webkit-justify-content: flex-start;
+
+	flex-direction: column;
+	/* does "justify-content" make a difference when contents add up to 100%
+	(bc if they don't, error)? */
+	justify-content: flex-start;
+}
+
+.ascender {
+	width: 100%;
+	height: 70%;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: flex-end;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.t {
+	-webkit-justify-content: center;
+
+	justify-content: center;
+}
+
+.stem {
+	width: 35%;
+	height: 100%;
+	background-color: black;
+}
+
+.stroke {
+	width: 30%;
+	height: 30%;
+	background-color: black;
+}
+
+.red {
+	background-color: red;
+}
+
+.r {
+	width: 100%;
+}
+
+.e-top {
+	width: 100%;
+	height: 70%;
+}
+
+.e-bottom {
+	width: 70%;
+	height: 30%;
+}
+
+/* the word "construction" has 12 letters, thus (100 / 12)% width per letter */
+
+.construction {
+	width: 8.33%;
+}
+
+/* this applies to the counter */
+
+.o {
+	width: 100%;
+	height: 100%;
+}
+
+
+.c {
+	-webkit-flex-direction: column;
+	-webkit-align-items: flex-start;
+
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 5px solid black;
+	padding: 3px;
+}
